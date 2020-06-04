@@ -9,7 +9,7 @@ In this use-case, we want to make usage of the email that is begin sent by Okta 
 This repository is a Node.JS project using the following main node modules:
 - Express: For HTTP requests
 - Handlebars:  For rendering webpages
-- Axios: For API call to Okta
+- Axios: For API call to Okta 
 
 One of the prerequisite for this is of course to have NPM installed on your computer.
 
