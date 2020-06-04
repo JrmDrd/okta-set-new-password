@@ -9,8 +9,8 @@ const apiKey = process.env.APIKEY;
 
 const app = express();
 
-app.use( bodyParser.json() );       // to support JSON-encoded bodies
-app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+app.use( bodyParser.json() );
+app.use(bodyParser.urlencoded({
     extended: true
 }));
 
@@ -87,13 +87,11 @@ app.get('/set-new-password', (req, res) => {
         let token = {recoveryToken: data};
         let response = await validateToken(token);
         if (response.status == 'validated'){
-            console.log(response);
             res.render('home', {
                 id: response.subject,
                 email: response.email
             })
         } else {
-            console.log(response)
             res.render('error', {
                 error: response.error
             })
