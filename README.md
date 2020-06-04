@@ -2,7 +2,7 @@
 In the context of a CIAM use-case. A user is being created without credentials via the API.
 In the same API call, the user is set to be activated. 
 Making such a call will set the user status to PROVISIONED, waiting for the password to be set and send an activation email to the user.
-When the user will click in the link in the activation email, the use should be redirect to an Okta page in order to set the password.
+When the user will click on the link in the activation email, the user should be redirected to an Okta page in order to set the password.
 In this use-case, we want to make usage of the email that is begin sent by Okta but use our own page in order to set the password.
 ## Getting Started
 ### Prerequisites
